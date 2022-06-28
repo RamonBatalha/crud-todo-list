@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Alert from './Alert';
 import List from './List';
-//Projeto finalizado, ideal adicionar um prompt antes de remover os itens e ajustar a questão do deletar item no edital 28/06/2022
+
 const getLocalStorage = () => {
   let list = localStorage.getItem('list');
 
