@@ -1,13 +1,166 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+    
+    min-width: 50vw;
+    min-height: 80vh;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 8px #888888;
+    margin-top: 50px;
+    
+    
+}
+
+body {
+    background-color: #dff9f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;;
+    /* height: 100vh; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+form h3 {
+    /* margin-top: 25px; */
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+
+
+#div-input {
+    display: flex;
+    gap: 30px;
+    margin: 0 15px;
+}
+
+
+
+#div-list{
+
+    margin: 20px;
+    /* border: solid 2px black; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+hr {
+    width: 150px;
+    border-top: 1px solid red;
+  }
+
+
+#item-list-section {
+    min-width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px rgba(119, 116, 116, 0.253);
+    min-height: 50px;
+    padding: 5px 0;
+    
+}
+
+#item-list-section p {
+    word-wrap: break-word;
+    /* border: solid 2px red; */
+    max-width: 30vw;
+
+}
+
+
+.icons {
+    font-size: 20px;
+    
+}
+
+#icon-dlt:hover {
+    color:red;
+    cursor: pointer;
+}
+
+#icon-up:hover {
+    color: green;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.btn {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+/* #btn-sub {
+    height: 30px;
+} */
+
+.btn:hover {
+    background-color: rgba(255, 0, 0, 0.74);
+    cursor: pointer;
+    
+}
+
+#btn-sub:hover {
+    background-color: #262626;
+}
+
+.clear-btn {
+    margin-top: 15px;
+}
+
+.alerta {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    width: 40vw;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.alerta-sucess {
+    background-color: #50d578c5;
+}
+
+.alerta-danger {
+    background-color:#d70404ad;
+}
+
+@media screen and (max-width: 600px) {
+    #div-input{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #root {
+        min-width: 80vw;
+    }
 }
